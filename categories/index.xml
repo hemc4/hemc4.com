@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hemendra</title>
+    <link>https://www.hemc4.com/categories/</link>
+    <description>Recent content in Categories on Hemendra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>hemc008@gmail.com (Hemendra)</managingEditor>
+    <webMaster>hemc008@gmail.com (Hemendra)</webMaster>
+    <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+    
+	<atom:link href="https://www.hemc4.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
