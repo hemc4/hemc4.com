@@ -23,10 +23,94 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sun, 30 Aug 2020 16:55:33 &#43;0530</lastBuildDate>
+        <lastBuildDate>Sun, 30 Aug 2020 17:10:25 &#43;0530</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://www.hemc4.com/rss.xml" />
         
+        
+            <item>
+                <title>Hosting Hugo Blog on Github Pages</title>
+                <link>https://www.hemc4.com/posts/hosting-hugo-blog-on-github-pages/</link>
+                <guid isPermaLink="true">https://www.hemc4.com/posts/hosting-hugo-blog-on-github-pages/</guid>
+                <pubDate>Sun, 16 Aug 2020 12:01:05 &#43;0530</pubDate>
+                
+                    <author>hemc008@gmail.com (Hemendra)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;I have wrote about my previous setup for Hugo blog &lt;a href=&#34;https://www.hemc4.com/posts/hugo-blog/&#34;&gt;here&lt;/a&gt; that was using the AWS S3 bucket and CloudFront as static site. Although it is decent setup, there are some complexities that can be simplified.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First, that setup will cost you the S3 bandwidth charges. Storage charges are not much because of the small size but if traffic on your blog is increasing it will increase the AWS bill.&lt;/li&gt;
+&lt;li&gt;Deployment is bit complex. If you are not aware how AWS S3 and CloudFront works, you will have a hard fixing/upgrading it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So to solve these problems, I found a better solution, use Github pages to host your blog with a custom domain. Github pages are free and serve the site from the Github repo. This way there is no cost involved for the hosting. Hugo has simple official support documentation to run it on Github pages. Deployment is very simple, just push the changes to the Github repo.&lt;/p&gt;
+&lt;p&gt;I have dumped the fancy io domain hemc.io to simple .com domain hemc4.com which costs 1/4 of the io domain.&lt;/p&gt;
+&lt;p&gt;It is better the keep the whole setup simple for maintainability. Simpler the setup, less friction it will generate to do the actual work.&lt;/p&gt;
+&lt;h3 id=&#34;hugo-site-on-github-pages&#34;&gt;Hugo Site on Github Pages&lt;/h3&gt;
+&lt;p&gt;Hugo has &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;official documentation&lt;/a&gt; for setting up site with Github pages. This is concise and self sufficient for the setup. I just followed the approach with the 2 repos setup.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Private repo to Hugo files&lt;/li&gt;
+&lt;li&gt;Public repo for generated static site files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have slightly modified the script for pushing the changes to private repo.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/hemc4/56e2ec2b69301652241b080dfa150ed9.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;Internet is full of the more complex setup with Github actions and different CI/CD tools, but I prefer this simple setup for deploy. After every new post creation just run the script.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./deploy.sh&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;custom-domain-for-github-pages&#34;&gt;Custom domain for Github Pages&lt;/h3&gt;
+&lt;p&gt;Custom domain setup requires changes on the DNS file of your domain and the Github bucket repo settings.&lt;/p&gt;
+&lt;h4 id=&#34;setting-up-the-domain-dns-entries&#34;&gt;Setting up the domain DNS entries&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.hemc4.com/img/godaddy_dns_setup.png&#34; alt=&#34;godaddy_dns_setup.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Domain requires 4 &lt;code&gt;A&lt;/code&gt; entries and 1 &lt;code&gt;CNAME&lt;/code&gt; entry in the DNS file.&lt;/p&gt;
+&lt;h4 id=&#34;setting-up-github-repo&#34;&gt;Setting up Github repo&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.hemc4.com/img/github_custom_domain.png&#34; alt=&#34;github_custom_domain.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;if you face any problem while setting up custom domain Github has detailed guide &lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/troubleshooting-custom-domains-and-github-pages&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;Hugo official doc for Github pages hosting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site&#34;&gt;Github official docs for custom domains&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://medium.com/@hossainkhan/using-custom-domain-for-github-pages-86b303d3918a&#34;&gt;Setting up a custom domain to point to Github pages&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/troubleshooting-custom-domains-and-github-pages&#34;&gt;Github custom domain troubleshooting&lt;/a&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://www.hemc4.com/categories/development/">Development</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://www.hemc4.com/categories/blog/">blog</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://www.hemc4.com/tags/development/">Development</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://www.hemc4.com/tags/blog/">blog</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Switching to Hugo Blog</title>
