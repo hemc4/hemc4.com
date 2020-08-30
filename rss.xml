@@ -23,22 +23,83 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sun, 16 Aug 2020 15:47:37 &#43;0530</lastBuildDate>
+        <lastBuildDate>Sun, 30 Aug 2020 16:50:19 &#43;0530</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://www.hemc4.com/rss.xml" />
         
         
             <item>
-                <title>My First Post</title>
-                <link>https://www.hemc4.com/posts/my-first-post/</link>
-                <guid isPermaLink="true">https://www.hemc4.com/posts/my-first-post/</guid>
-                <pubDate>Sun, 16 Aug 2020 12:01:05 &#43;0530</pubDate>
+                <title>Switching to Hugo Blog</title>
+                <link>https://www.hemc4.com/posts/hugo-blog/</link>
+                <guid isPermaLink="true">https://www.hemc4.com/posts/hugo-blog/</guid>
+                <pubDate>Sat, 11 Feb 2017 15:48:36 &#43;0530</pubDate>
                 
                     <author>hemc008@gmail.com (Hemendra)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description>&lt;p&gt;This is sample post&lt;/p&gt;
+                    <description>&lt;blockquote&gt;
+&lt;p&gt;Update :- This deployment in not in use anymore. check new setup &lt;a href=&#34;https://www.hemc4.com/posts/hosting-hugo-blog-on-github-pages/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For quite a while, I was planning to restart my blog to share my recent adventures and learnings in tech/life but the headache of maintenance and monthly bill to keep running it, leads to keep procrastinating it.&lt;/p&gt;
+&lt;h2 id=&#34;why-not-wordpress-&#34;&gt;Why not Wordpress ?&lt;/h2&gt;
+&lt;p&gt;I once started using blogspot during my college days and it was amazing but it didn&#39;t work for too long. Although the hosting, custom domain and other things were sorted, the efforts to customize little things annoyed me. Then after some friends recommendations, switched it to  popular Wordpress but high server cost,time for maintenance and security issues forced me to look for alternatives.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A lot of non-programmers, tech-savvy people are using Wordpress and it is really easy to maintain, just install plugin for almost everything you want to do with Wordpress then why it is a maintenance overhead ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Every other week I could see some bot scanning the very known Wordpress architecture to figure out loopholes and take it down and I don&#39;t want my Wordpress server sending backdoor data or displaying porn ads on my blog. All I needed was simple static blog with the comments on. Medium would have worked fine but I wanted more control on the content.&lt;/p&gt;
+&lt;h2 id=&#34;hugo&#34;&gt;Hugo&lt;/h2&gt;
+&lt;p&gt;While reading some post in Go community I came to know Hugo, a static site generator. The idea of converting the .md docs to blog was really exciting. Those Markdown docs I keep creating during day to day base programming sessions, could be converted to blog post real quick.&lt;/p&gt;
+&lt;p&gt;After browsing through docs, It appeared very simple, powerful and really fast. I heard &lt;a href=&#34;https://twitter.com/spf13&#34;&gt;@spf13&lt;/a&gt;(Creator of Hugo) mentioning in talk that someone using Hugo to generate 25k static blog posts and it is still fast.&lt;/p&gt;
+&lt;h3 id=&#34;installation&#34;&gt;&lt;strong&gt;Installation&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;I have installed it on my favorite cloud AWS by simple following steps on this &lt;a href=&#34;http://blog.aws.andyfase.com/s3-backed-static-blog/index.html&#34;&gt;post&lt;/a&gt;. Once this you setup this way there is no need to put the content on server, it just directly serves from s3 using Cloudfront and Route53.&lt;/p&gt;
+&lt;p&gt;This setup is very cheap and if you are running on AWS free tier then almost free.&lt;/p&gt;
+&lt;h3 id=&#34;customization&#34;&gt;&lt;strong&gt;Customization&lt;/strong&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Didn&#39;t you just said it is dead simple then why you need to customize it ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hugo comes with it&#39;s own command line tools to generate, test and deploy the blog, once you put it with s3 it requires some additional scripts to handle seamless deployment so why not just write some script and bind it to tools you use everyday. I decided to combine it with npm by just adding some custom scripts.&lt;/p&gt;
+&lt;h3 id=&#34;integration-with-npm&#34;&gt;&lt;strong&gt;Integration with npm&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Hugo has it&#39;s own commands to run and build. In this simple config file, I have created small small scripts to handle these commands on Hugo level.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/hemc4/d03fa9cff790d9c40961c49d79a57342.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;AWS CLI Integration makes these scripts more powerful to handle build and deployments.&lt;/p&gt;
+&lt;h3 id=&#34;run-local&#34;&gt;&lt;strong&gt;Run Local&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;npm start&lt;/code&gt; command is linked to run Hugo server with all the drafts on local machine. Whenever you make any changes to files it reloads the blog in browser.&lt;/p&gt;
+&lt;h3 id=&#34;build&#34;&gt;&lt;strong&gt;Build&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;During the build, I don&#39;t want to reset my git logs as I am maintaining a state of blog on Github, So instead of deleting the whole public folder, only content will be removed not the .git files&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/hemc4/625aa141a80a45682f6085e77350f655.js&#34;&gt;&lt;/script&gt;
+&lt;h3 id=&#34;deploy&#34;&gt;Deploy&lt;/h3&gt;
+&lt;p&gt;In case of s3 Hugo setup, deployment require these things&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sync the local updated files with s3 bucket&lt;/li&gt;
+&lt;li&gt;Invalidate the Cloudfront cache to serve the fresh posts from s3 bucket&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src=&#34;https://gist.github.com/hemc4/c79d163579c9931b6dafb90c92ed1d27.js&#34;&gt;&lt;/script&gt;
+&lt;h4 id=&#34;check-deploy-status&#34;&gt;&lt;strong&gt;Check Deploy Status&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Invalidation some times takes a while so how do I know if the cache is clear and the blog serving the updated posts ?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There might be some better way to solve this problem but I came with a simple script that checks the aws cloufront status from aws-cli and you can check the status of the latest deployment.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/hemc4/1aebc559c599bab7d7336f63b3cc4eed.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;So you only need few npm commands to publish a blog post.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#run the local server
+npm start
+
+# create a new post
+hugo new post/first-post.md
+
+# build
+npm run-script build
+
+#deploy
+npm run-script deploy
+
+#check deploy status
+npm run-script deploystatus
+
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;Now it is really easy to add a new post and simply publish it in single command. If you found any other way to simplify , Please put in comments.&lt;/p&gt;
+&lt;p&gt;Happy Blogging :)&lt;/p&gt;
 </description>
                 
                 
@@ -47,7 +108,35 @@
                 
                     
                         
+                            
+                                
+                                
+                                
+                                    <category domain="https://www.hemc4.com/categories/development/">Development</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://www.hemc4.com/categories/blog/">blog</category>
+                                
+                            
+                        
                     
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://www.hemc4.com/tags/development/">Development</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://www.hemc4.com/tags/blog/">blog</category>
+                                
+                            
                         
                     
                 
