@@ -20,17 +20,13 @@
   />
 
   
-  <title>Hosting Hugo Blog on Github Pages - Hemendra</title>
+  <title>Why Code Ages — And Why It Needs a Workout - Hemendra</title>
 
   
   <meta name="theme-color" />
 
-  <meta name="description" content="I have wrote about my previous setup for Hugo blog here that was using the AWS S3 bucket and CloudFront as static site. Although it is decent setup, there are some complexities that can be simplified.
-
-First, that setup will cost you the S3 bandwidth charges. Storage charges are not much because of the small size but if traffic on your blog is increasing it will increase the AWS bill.
-Deployment is bit complex. If you are not aware how AWS S3 and CloudFront works, you will have a hard fixing/upgrading it.
-
-So to solve these problems, I found a better solution, use Github pages to host your blog with a custom domain. Github pages are free and serve the site from the Github repo. This way there is no cost involved for the hosting. Hugo has simple official support documentation to run it on Github pages. Deployment is very simple, just push the changes to the Github repo." />
+  <meta name="description" content="A few weeks ago, I met an old colleague who maintains a fairly large microservice at his company. He sounded frustrated .
+“We’re thinking of rewriting the whole thing from scratch,” he said. “Upgrading it will take forever. It’s easier to just rewrite.”" />
   <meta name="author" content="Hemendra" /><link rel="preload stylesheet" as="style" href="http://localhost:54592/main.min.css" />
 
   
@@ -180,40 +176,60 @@ So to solve these problems, I found a better solution, use Github pages to host 
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">Hosting Hugo Blog on Github Pages</h1><div class="text-xs antialiased opacity-60"><time>Aug 16, 2020</time></div></header>
+    <h1 class="my-0! pb-2.5">Why Code Ages — And Why It Needs a Workout</h1><div class="text-xs antialiased opacity-60"><time>Dec 31, 2025</time></div></header>
 
-  <section><p>I have wrote about my previous setup for Hugo blog <a href="/posts/hugo-blog/">here</a> that was using the AWS S3 bucket and CloudFront as static site. Although it is decent setup, there are some complexities that can be simplified.</p>
+  <section><p>A few weeks ago, I met an old colleague who maintains a fairly large microservice at his company. He sounded frustrated .</p>
+<p>“We’re thinking of rewriting the whole thing from scratch,” he said. “Upgrading it will take forever. It’s easier to just rewrite.”</p>
+<p>That sentence stuck with me.The service wasn’t crashing. It wasn’t on fire. It wasn’t written in some extinct language. Still, the team wanted to throw it away like a worn-out shoe.</p>
+<p>It made me wonder</p>
+<p><strong>Why does Code Feel Old?</strong></p>
+<p>It doesn’t rust. It doesn’t decay in sunlight. It doesn’t get infected with bugs unless someone writes them. So why do we treat a 5 or 6 year-old codebase like a dying patient?</p>
+<p>We forget that writing new code is expensive. Not just in engineering hours, but in lost opportunities: Every rewrite steals time from building new features. Every rewrite delays solving a customer pain point. In an AI-driven world,  where new products are born at super fast speed, the cost of slowing down is huge.</p>
+<p>And yet… teams still rewrite.</p>
+<p>Something deeper is happening.</p>
+<p>This makes me think about human body ages. A human body doesn’t suddenly “break.” It breaks when we stop moving. Muscles weaken, joints stiffen, flexibility disappears.</p>
+<p>And code isn’t that different. A codebase “ages” when engineers stop understanding it. Its longevity depends on the same things our bodies rely on:</p>
 <ul>
-<li>First, that setup will cost you the S3 bandwidth charges. Storage charges are not much because of the small size but if traffic on your blog is increasing it will increase the AWS bill.</li>
-<li>Deployment is bit complex. If you are not aware how AWS S3 and CloudFront works, you will have a hard fixing/upgrading it.</li>
+<li>
+<p>Readability is  like cardio.</p>
+</li>
+<li>
+<p>Extensibility is like flexibility.</p>
+</li>
+<li>
+<p>Testability is like strength.</p>
+</li>
 </ul>
-<p>So to solve these problems, I found a better solution, use Github pages to host your blog with a custom domain. Github pages are free and serve the site from the Github repo. This way there is no cost involved for the hosting. Hugo has simple official support documentation to run it on Github pages. Deployment is very simple, just push the changes to the Github repo.</p>
-<p>I have dumped the fancy io domain hemc.io to simple .com domain hemc4.com which costs 1/4 of the io domain.</p>
-<p>It is better the keep the whole setup simple for maintainability. Simpler the setup, less friction it will generate to do the actual work.</p>
-<h3 id="hugo-site-on-github-pages">Hugo Site on Github Pages</h3>
-<p>Hugo has <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">official documentation</a> for setting up site with Github pages. This is concise and self sufficient for the setup. I just followed the approach with the 2 repos setup.</p>
-<ul>
-<li>Private repo to Hugo files</li>
-<li>Public repo for generated static site files</li>
-</ul>
-<p>I have slightly modified the script for pushing the changes to private repo.</p>
-<script src="https://gist.github.com/hemc4/56e2ec2b69301652241b080dfa150ed9.js"></script>
-<p>Internet is full of the more complex setup with Github actions and different CI/CD tools, but I prefer this simple setup for deploy. After every new post creation just run the script.</p>
-<p><code>./deploy.sh</code></p>
-<h3 id="custom-domain-for-github-pages">Custom domain for Github Pages</h3>
-<p>Custom domain setup requires changes on the DNS file of your domain and the Github bucket repo settings.</p>
-<h4 id="setting-up-the-domain-dns-entries">Setting up the domain DNS entries</h4>
-<p><img src="/img/godaddy_dns_setup.png" alt="godaddy_dns_setup.png"></p>
-<p>Domain requires 4 <code>A</code> entries and 1 <code>CNAME</code> entry in the DNS file.</p>
-<h4 id="setting-up-github-repo">Setting up Github repo</h4>
-<p><img src="/img/github_custom_domain.png" alt="github_custom_domain.png"></p>
-<p>if you face any problem while setting up custom domain Github has detailed guide <a href="https://docs.github.com/en/github/working-with-github-pages/troubleshooting-custom-domains-and-github-pages">here</a></p>
+<p>If these weaken, even working code feels unusable.</p>
+<p><img src="/img/why_code_ages.png" alt="why_code_ages.png"></p>
+<p><strong>Readability is The Difference between Life and Death</strong></p>
+<p>If a new engineer can’t understand your code, your code is already half-dead.</p>
+<p>I’ve seen this happen multiple times. Teams change, people leave, and suddenly the new folks stare at old files like they’re ancient inscriptions. The code still runs, but maintaining it feels frustrating.</p>
+<p>In the age of AI agents, readability matters even more.If an AI agent can’t read your code, it can’t help you refactor it, fix it, or generate safe patches.</p>
+<p>In the past, unreadable code was a burden for the next developer. Today, it’s a barrier to the most powerful productivity tool we have. Messy code doesn&rsquo;t just confuse humans, it causes AI to hallucinate and suggest hallucinated fixes.</p>
+<p>When both humans and machines struggle, rewriting becomes the easier option — even if the old system works fine. Unreadable code doesn’t rot. It just becomes too expensive to understand.</p>
+<p><strong>Extensibility means, Can You Replace a Beam Without Rebuilding the House?</strong></p>
+<p>Extensibility is the building’s flexibility — the ability to change one part without collapsing the entire structure.</p>
+<p>A healthy microservice system lets you do things like: Swap routers or ORMs or middleware with a new better option. Remove a feature without touching ten others</p>
+<p>But some architectures grow into dense graphs where everything talks to everything.Pull one piece and everything rattles. Spaghetti code as we say.</p>
+<p>When a codebase reaches that point, small changes feel dangerous and danger pushes people toward rewrites.</p>
+<p><strong>Testability means, Refactoring with Confidence, it is the real Superpower</strong></p>
+<p>Testability is the strength of your codebase — the part that gives you confidence to move things around.</p>
+<p>Years ago, I worked with a decade-old C++ game engine. No tests. Zero. Every small change required twenty QA engineers running manual sanity checks. Even after all that, we were never fully confident. Naturally, nobody wanted to touch the core modules. Nobody wanted to refactor anything.We weren’t scared of bugs — we were scared of the unknown.</p>
+<p>And when fear becomes the default emotion around a codebase… the rewrite discussions begin.</p>
+<p><strong>So, How do You Delay a Rewrite?</strong></p>
+<p>Everyone knows the easy answer: “Just refactor regularly.”
+That’s the same as saying: “Just exercise.” The advice is simple - the discipline is not.</p>
+<p>Teams are busy. Deadlines loom. Priorities shift. Refactoring becomes “tomorrow’s problem,” and tomorrow never comes. But the truth is this: Code doesn’t die from age. It dies from neglect.</p>
+<p><strong>How to Actually &ldquo;Exercise&rdquo; Your Code</strong></p>
+<p>The Pre-Feature refactoring Buffer: Don&rsquo;t ask for refactoring sprints, you’ll never get them. Instead, bake a pre-feature refactor buffer with each feature. Follow the &lsquo;Two-PR&rsquo; Rule, Before you add a single line of new logic, submit a PR that only cleans the area. No functionality changes, no test updates—just pure cleanup. It’s is like climbing the stairs daily instead of waiting for a gym day.</p>
+<p>Optimize for Deletion: Keep your codebase lean. Instead of layers of abstractions, write code in a way that if a feature dies, you can delete the entire folder without a single error appearing elsewhere. Think of it like shedding body fat without losing muscle. </p>
+<p>Write for the AI Model: Don’t write clever code. It should be so obvious that an AI model can explain it back to you. If LLM struggles to understand it, new engineers will have a hard time as well. Clever code is like lifting heavy weights in the gym without proper form. Your peers are impressed but the end is bitter and injuries are inevitable.</p>
+<p>These small habits keep the system moving — just like daily exercise keeps the body alive and mobile.</p>
+<p>In the end, code is like us. It doesn’t break all at once. It breaks slowly, silently, when we stop taking care of it. And just like our bodies, the best time to start taking care of it was yesterday. The second best time is today.</p>
+<p>The better you maintain it, the longer it lives and the fewer “let’s rewrite everything” meetings you’ll have to sit through.</p>
 <hr>
-<p><strong>References:</strong></p>
-<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Hugo official doc for Github pages hosting</a></p>
-<p><a href="https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site">Github official docs for custom domains</a></p>
-<p><a href="https://medium.com/@hossainkhan/using-custom-domain-for-github-pages-86b303d3918a">Setting up a custom domain to point to Github pages</a></p>
-<p><a href="https://docs.github.com/en/github/working-with-github-pages/troubleshooting-custom-domains-and-github-pages">Github custom domain troubleshooting</a></p>
+<p><em>Note: Parts of this article in the final version were edited by AI</em></p>
 </section>
 
   <footer class="mt-12 flex flex-wrap"><a
@@ -222,16 +238,18 @@ So to solve these problems, I found a better solution, use Github pages to host 
       >Development</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:54592/tags/coding"
+      >coding</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
       href="http://localhost:54592/tags/blog"
       >blog</a
     ></footer><nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:54592/posts/why-code-ages/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Why Code Ages — And Why It Needs a Workout</span></a
-    ><a
+  ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:54592/posts/hugo-blog/"
-      ><span>Switching to Hugo Blog</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+      href="http://localhost:54592/posts/hosting-hugo-blog-on-github-pages/"
+      ><span>Hosting Hugo Blog on Github Pages</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav><div class="mt-24" id="disqus_thread"></div>
   <script>
     const disqusShortname = 'hemc4';

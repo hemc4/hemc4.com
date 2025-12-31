@@ -1,60 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://www.hemc4.com/categories/blog/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
+    <loc>http://localhost:54592/categories/blog/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/tags/blog/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/categories/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/categories/coding/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/tags/coding/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/categories/development/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/tags/development/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/posts/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/tags/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/posts/why-code-ages/</loc>
+    <lastmod>2025-12-31T13:56:26+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/posts/hosting-hugo-blog-on-github-pages/</loc>
+    <lastmod>2025-06-28T10:59:22+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/about/</loc>
+    <lastmod>2025-12-31T13:47:47+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:54592/posts/hugo-blog/</loc>
+    <lastmod>2025-06-28T10:59:22+05:30</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/tags/blog/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/categories/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/categories/development/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/tags/development/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/posts/hosting-hugo-blog-on-github-pages/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/posts/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/tags/</loc>
-    <lastmod>2020-08-30T17:10:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/about/</loc>
-    <lastmod>2020-08-30T16:47:29+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.hemc4.com/posts/hugo-blog/</loc>
-    <lastmod>2020-08-30T13:54:39+05:30</lastmod>
-  </url>
-  
 </urlset>
