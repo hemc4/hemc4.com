@@ -11,7 +11,7 @@
   style="--bg:#fbfbfb"
   lang="en"
   dir="ltr"
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+><head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -31,32 +31,57 @@ First, that setup will cost you the S3 bandwidth charges. Storage charges are no
 Deployment is bit complex. If you are not aware how AWS S3 and CloudFront works, you will have a hard fixing/upgrading it.
 
 So to solve these problems, I found a better solution, use Github pages to host your blog with a custom domain. Github pages are free and serve the site from the Github repo. This way there is no cost involved for the hosting. Hugo has simple official support documentation to run it on Github pages. Deployment is very simple, just push the changes to the Github repo." />
-  <meta name="author" content="Hemendra" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+  <meta name="author" content="Hemendra" /><link rel="preload stylesheet" as="style" href="https://www.hemc4.com/main.min.css" />
 
   
-  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+  <link rel="preload" as="image" href="https://www.hemc4.com/theme.png" />
 
   <link rel="preload" as="image" href="https://www.gravatar.com/avatar/bd6df7fa24163910d5803f3a6e63aa09?s=160&amp;d=identicon" />
 
-  <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" /><link rel="preload" as="image" href="http://localhost:1313/github.svg" /><link rel="preload" as="image" href="http://localhost:1313/linkedin.svg" />
+  <link rel="preload" as="image" href="https://www.hemc4.com/twitter.svg" /><link rel="preload" as="image" href="https://www.hemc4.com/github.svg" /><link rel="preload" as="image" href="https://www.hemc4.com/linkedin.svg" />
 
   <script
     defer
-    src="http://localhost:1313/highlight.min.js"
+    src="https://www.hemc4.com/highlight.min.js"
     onload="hljs.initHighlightingOnLoad();"
   ></script>
 
   
   <link
     rel="icon"
-    href="http://localhost:1313/favicon.ico"
+    href="https://www.hemc4.com/favicon.ico"
   />
   <link
     rel="apple-touch-icon"
-    href="http://localhost:1313/apple-touch-icon.png"
+    href="https://www.hemc4.com/apple-touch-icon.png"
   />
 
   <meta name="generator" content="Hugo 0.153.5">
+  <meta itemprop="name" content="Hosting Hugo Blog on Github Pages">
+  <meta itemprop="description" content="I have wrote about my previous setup for Hugo blog here that was using the AWS S3 bucket and CloudFront as static site. Although it is decent setup, there are some complexities that can be simplified.
+First, that setup will cost you the S3 bandwidth charges. Storage charges are not much because of the small size but if traffic on your blog is increasing it will increase the AWS bill. Deployment is bit complex. If you are not aware how AWS S3 and CloudFront works, you will have a hard fixing/upgrading it. So to solve these problems, I found a better solution, use Github pages to host your blog with a custom domain. Github pages are free and serve the site from the Github repo. This way there is no cost involved for the hosting. Hugo has simple official support documentation to run it on Github pages. Deployment is very simple, just push the changes to the Github repo.">
+  <meta itemprop="datePublished" content="2020-08-16T12:01:05+05:30">
+  <meta itemprop="dateModified" content="2025-06-28T10:59:22+05:30">
+  <meta itemprop="wordCount" content="385">
+  <meta itemprop="keywords" content="Development,Blog"><meta property="og:url" content="https://www.hemc4.com/posts/hosting-hugo-blog-on-github-pages/">
+  <meta property="og:site_name" content="Hemendra">
+  <meta property="og:title" content="Hosting Hugo Blog on Github Pages">
+  <meta property="og:description" content="I have wrote about my previous setup for Hugo blog here that was using the AWS S3 bucket and CloudFront as static site. Although it is decent setup, there are some complexities that can be simplified.
+First, that setup will cost you the S3 bandwidth charges. Storage charges are not much because of the small size but if traffic on your blog is increasing it will increase the AWS bill. Deployment is bit complex. If you are not aware how AWS S3 and CloudFront works, you will have a hard fixing/upgrading it. So to solve these problems, I found a better solution, use Github pages to host your blog with a custom domain. Github pages are free and serve the site from the Github repo. This way there is no cost involved for the hosting. Hugo has simple official support documentation to run it on Github pages. Deployment is very simple, just push the changes to the Github repo.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-08-16T12:01:05+05:30">
+    <meta property="article:modified_time" content="2025-06-28T10:59:22+05:30">
+    <meta property="article:tag" content="Development">
+    <meta property="article:tag" content="Blog">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hosting Hugo Blog on Github Pages">
+  <meta name="twitter:description" content="I have wrote about my previous setup for Hugo blog here that was using the AWS S3 bucket and CloudFront as static site. Although it is decent setup, there are some complexities that can be simplified.
+First, that setup will cost you the S3 bandwidth charges. Storage charges are not much because of the small size but if traffic on your blog is increasing it will increase the AWS bill. Deployment is bit complex. If you are not aware how AWS S3 and CloudFront works, you will have a hard fixing/upgrading it. So to solve these problems, I found a better solution, use Github pages to host your blog with a custom domain. Github pages are free and serve the site from the Github repo. This way there is no cost involved for the hosting. Hugo has simple official support documentation to run it on Github pages. Deployment is very simple, just push the changes to the Github repo.">
+
+  <link rel="canonical" href="https://www.hemc4.com/posts/hosting-hugo-blog-on-github-pages/" />
 </head>
 <body
     class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
@@ -66,7 +91,7 @@ So to solve these problems, I found a better solution, use Github pages to host 
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
       class="-translate-y-[1px] text-2xl font-medium"
-      href="http://localhost:1313/"
+      href="https://www.hemc4.com/"
       >Hemendra</a
     >
     <div
@@ -218,19 +243,19 @@ So to solve these problems, I found a better solution, use Github pages to host 
 
   <footer class="mt-12 flex flex-wrap"><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/development"
+      href="https://www.hemc4.com/tags/development"
       >Development</a
     ><a
       class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/blog"
+      href="https://www.hemc4.com/tags/blog"
       >blog</a
     ></footer><nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/posts/onboard-yourself-on-new-application/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>onboard-yourself-on-new-application</span></a
+  ><a class="ltr:pr-3 rtl:pl-3" href="https://www.hemc4.com/posts/why-code-ages/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Why Code Ages — And Why It Needs a Workout</span></a
     ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:1313/posts/hugo-blog/"
+      href="https://www.hemc4.com/posts/hugo-blog/"
       ><span>Switching to Hugo Blog</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav><div class="mt-24" id="disqus_thread"></div>
   <script>
@@ -243,7 +268,7 @@ So to solve these problems, I found a better solution, use Github pages to host 
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2025
-    <a class="link" href="http://localhost:1313/">Hemendra</a></div>
+    <a class="link" href="https://www.hemc4.com/">Hemendra</a></div>
   <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
     >powered by hugo️️</a
   >️
