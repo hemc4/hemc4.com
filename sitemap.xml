@@ -2,46 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:54592/categories/blog/</loc>
+    <loc>http://localhost:1313/categories/blog/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/tags/blog/</loc>
+    <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/categories/coding/</loc>
+    <loc>http://localhost:1313/categories/coding/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/tags/coding/</loc>
+    <loc>http://localhost:1313/tags/coding/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/categories/development/</loc>
+    <loc>http://localhost:1313/categories/development/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/tags/development/</loc>
+    <loc>http://localhost:1313/tags/development/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/posts/why-code-ages/</loc>
+    <loc>http://localhost:1313/posts/why-code-ages/</loc>
     <lastmod>2025-12-31T13:56:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/posts/hosting-hugo-blog-on-github-pages/</loc>
+    <loc>http://localhost:1313/posts/onboard-yourself-on-new-application/</loc>
     <lastmod>2025-06-28T10:59:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/about/</loc>
+    <loc>http://localhost:1313/posts/hosting-hugo-blog-on-github-pages/</loc>
+    <lastmod>2025-06-28T10:59:22+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-12-31T13:47:47+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:54592/posts/hugo-blog/</loc>
+    <loc>http://localhost:1313/posts/hugo-blog/</loc>
     <lastmod>2025-06-28T10:59:22+05:30</lastmod>
   </url>
 </urlset>
